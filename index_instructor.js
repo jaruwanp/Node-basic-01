@@ -16,10 +16,10 @@ let myserver = myhttp.createServer(
     if ( myrequest.url === "/hey" ) {
       mytext = "Well hello there...";
     } else {
-      mytext = "I don't know you!";
+      mytext = "I don't know you at all";
     }
 
-    mytext = mytext + " - Please help me... I am trapped in a Node.js server!";
+    mytext = mytext + " - xxxxxxPlease help me... I am trapped in a Node.js server!";
 
     // writeHead() creates an http response header, including the status code (200 OK), the content type
     myresponse.writeHead( 200, { "Content-Type": "text/plain" } );
